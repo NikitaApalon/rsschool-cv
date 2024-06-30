@@ -21,3 +21,38 @@ ___
 - C++ (basic)
 - HTML
 - CSS
+
+### Code Example
+___
+```C++
+#include <iostream>
+
+using namespace std;
+
+int sum(int a, int b) {
+	return a + b;
+}
+
+int main() {
+	int c;
+	
+	c = sum(5, 3);
+	cout << c << endl;
+	
+	return 0;
+}
+```
+
+### Experience
+___
+
+### Education
+___
+- **University:** Belarusian State Academy of Communications, Telecommunications Technician
+- **Courses:**
+	- [C++ lectures](https://www.youtube.com/playlist?list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r)
+	- [CS50 lectures](https://www.youtube.com/channel/UCcabW7890RKJzL968QWEykA)
+
+### English
+___
+**A1**

@@ -1,6 +1,3 @@
-### rsschool-cv
-___
-
 ## Nikita Palonnikov
 ___
 

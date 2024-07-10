@@ -33,6 +33,11 @@ body {
     margin-left: 25%;
 }
 
+#general h1 {
+    color: rgb(82, 48, 3);
+    margin-top: 57px;
+}
+
 #general img {
     width: 160px;
     height: 160px;
@@ -139,4 +144,14 @@ a:hover {
 #bottom a {
     color: black;
     text-decoration: none;
+}
+
+.nav {
+    margin-left: 75%;
+    padding-top: 15px;
+}
+
+.nav a{
+    color: white;
+    padding-right: 20px;
 }

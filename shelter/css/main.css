@@ -108,7 +108,7 @@ main {
         height: 322px;
         top: 163px;
 
-        & h2 {
+        & h1 {
             position: absolute;
             width: 310px;
             height: 114px;

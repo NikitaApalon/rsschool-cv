@@ -8,30 +8,29 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <div id = "logo">
+            <span><a href="" id="logotype">Cozy House</a></span>
+            <span><h5>Shelter for pets in Boston</h5></span>
+        </div>
+        <nav id = "navMenu">
+            <div class="link_active">
+                <h5>About the shelter</h5>
+            </div>
+            <a href="pets.html" class="link"><h5>Our pets</h5></a>
+            <a href="#help" class="link"><h5>Help the shelter</h5></a>
+            <a href="#contact" class="link"><h5>Contacts</h5></a>
+        </nav>
+    </header>
+
     <main>
         
         <div id = "generalBackground">
-            <div id = "header">
-                <div id = "logo">
-                    <span><h3>Cozy House</h3></span>
-                    <span><h5>Shelter for pets in Boston</h5></span>
-                </div>
-                <nav id = "navMenu">
-                    <a href="" class="link_active">
-                        <h5>About the shelter</h5>
-                    </a>
-                    <a href="" class="link"><h5>Our pets</h5></a>
-                    <a href="" class="link"><h5>Help the shelter</h5></a>
-                    <a href="" class="link"><h5>Contacts</h5></a>
-                </nav>
-            </div>
-
             <div class="generalContent">
                 <div>
                     <h1>Not only people need a house</h1>
                     <h5>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</h5>
-                    <a href=""><h5 id="generalButton">Make a friend</h5></a>
+                    <a href="#friends"><h5 id="generalButton">Make a friend</h5></a>
                 </div>
                 <img src="css/Images/GeneralPhoto.png" alt="generalPhoto">
             </div>
@@ -63,6 +62,7 @@
         </div>
         
         <div id="pets">
+            <a name="friends"></a>
             <div id="petsContent">
                 <h3>Our friends who are looking for a house</h3>
                 <div id="slider">
@@ -84,15 +84,15 @@
                     </div>
                     <a href="" class="buttonArrow"><div class="rightArrow"></div></a>
                 </div>
-                <a href="" class="buttonPrimary">Get to know the rest</a>
+                <a href="pets.html" class="buttonPrimary">Get to know the rest</a>
             </div>
         </div>
 
         <div id="help">
+            <a name="help"></a>
             <div id="helpContent">
                 <h3>How you can help our shelter</h3>
                 <div id="list">
-                    <div id="firstIcon"></div>
                     <div class="icon">
                         <img src="css/Images/icon-pet-food.png" alt="">
                         <h4>Pet food</h4>
@@ -113,8 +113,7 @@
                         <img src="css/Images/icon-shampoos.png" alt="">
                         <h4>Shampoos</h4>
                     </div>
-                    <div id="secondIconLine"></div>
-                    <div class="icon">
+                    <div class="icon" id="secondLine">
                         <img src="css/Images/icon-vitamins.png" alt="">
                         <h4>Vitamins</h4>
                     </div>
@@ -141,8 +140,10 @@
                     <h3>You can also make a donation</h3>
                     <h5>Name of the bank / Type of bank account</h5>
                     <div id="creditCard">
-                        <img src="css/Images/icon-credit-card.png" alt="credit-card">
-                        <h4>8380 2880 8028 8791 7435</h4>
+                        <a href="">
+                            <img src="css/Images/icon-credit-card.png" alt="credit-card">
+                            <h4>8380 2880 8028 8791 7435</h4>
+                        </a>
                     </div>
                     <p>
                         Legal information and lorem ipsum dolor sit amet, consectetur 
@@ -154,32 +155,43 @@
             </div>
         </div>
     </main>
+
     <footer>
+        <a name="contact"></a>
         <div id="footerContent">
             <div id="contacts">
                 <h3>For questions and suggestions</h3>
                 <div class="cardTable">
-                    <img src="css/Images/icon-mail.png" alt="">
-                    <h4>email@shelter.com</h4>
+                    <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank">
+                        <img src="css/Images/icon-mail.png" alt="">
+                        <h4>email@shelter.com</h4>
+                    </a>
                 </div>
                 <div class="cardTable">
-                    <img src="css/Images/icon-phone.png" alt="">
-                    <h4>+13 674 567 75 54</h4>
+                    <a href="https://i.gifer.com/origin/2c/2c5abbb97f60334a7423b9299d7dd49a_w200.gif" target="_blank">
+                        <img src="css/Images/icon-phone.png" alt="">
+                        <h4>+13 674 567 75 54</h4>
+                    </a>
                 </div>
             </div>
             <div id="locations">
                 <h3>We are waiting for your visit</h3>
                 <div class="cardTable">
-                    <img src="css/Images/icon-pin.png" alt="">
-                    <h4>1 Central Street, Boston (entrance from the store)</h4>
+                    <a href="https://www.google.com/maps/search/1+Central+Street,+Boston/@42.3605597,-71.0634296,16z?entry=ttu" target="_blank">
+                        <img src="css/Images/icon-pin.png" alt="">
+                        <h4>1 Central Street, Boston (entrance from the store)</h4>
+                    </a>
                 </div>
                 <div class="cardTable">
-                    <img src="css/Images/icon-pin.png" alt="">
-                    <h4>18 South Park, London </h4>
+                    <a href="https://www.google.com/maps/search/18+South+Park,+London/@51.528607,-0.4312391,10z/data=!3m1!4b1?entry=ttu" target="_blank">
+                        <img src="css/Images/icon-pin.png" alt="">
+                        <h4>18 South Park, London</h4>
+                    </a>
                 </div>
             </div>
             <img src="css/Images/footer-puppy.png" alt="footer-puppy" id="footerPuppy">
         </div>
     </footer>
+
 </body>
 </html>

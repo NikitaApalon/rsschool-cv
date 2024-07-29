@@ -15,18 +15,18 @@
                 <p id="logoSignature">Shelter for pets in Boston</p>
             </div>
             <nav id = "navMenu">
-                <a href="" class="link"><p class="paragraf">About the shelter</p></a>
-                <a href="" class="link_active">
+                <a href="index.html" class="link"><p class="paragraf">About the shelter</p></a>
+                <div class="link_active">
                     <p class="paragraf">Our pets</p>
-                </a>
-                <a href="" class="link"><p class="paragraf">Help the shelter</p></a>
-                <a href="" class="link"><p class="paragraf">Contacts</p></a>
+                </div>
+                <a href="index.html#help" class="link"><p class="paragraf">Help the shelter</p></a>
+                <a href="#contact" class="link"><p class="paragraf">Contacts</p></a>
             </nav>
         </div>
     </header>
     <main>
         <div id="petsContent">
-            <h3>Our friends who are looking for a house</h3>
+            <h1>Our friends who are looking for a house</h1>
             <div id="cardsContainer">
                 <div id="firstCard"></div>
                 <div class="card">
@@ -72,37 +72,55 @@
                 </div>
             </div>
             <div id="navigation">
-                <div id="firstPaginator"></div>
-                <a href="" class="buttonPaginator"></a>
-                <a href="" class="buttonPaginator"></a>
-                <a href="" class="buttonPaginator"></a>
-                <a href="" class="buttonPaginator"></a>
-                <a href="" class="buttonPaginator"></a>
+                <a href="" class="buttonPaginator unknown">
+                    <div class="leftArrow"></div>
+                    <div class="leftArrow"></div>
+                </a>
+                <a href="" class="buttonPaginator unknown">
+                    <div class="leftArrow"></div>
+                </a>
+                <div class="buttonPaginator page">1</div>
+                <a href="" class="buttonPaginator active">
+                    <div class="rightArrow"></div>
+                </a>
+                <a href="" class="buttonPaginator active">
+                    <div class="rightArrow"></div>
+                    <div class="rightArrow"></div>
+                </a>
             </div>
         </div>
     </main>
     <footer>
+        <a name="contact"></a>
         <div id="footerContent">
             <div id="contacts">
                 <h3>For questions and suggestions</h3>
                 <div class="cardTable">
-                    <img src="css/Images/icon-mail.png" alt="">
-                    <h4>email@shelter.com</h4>
+                    <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank">
+                        <img src="css/Images/icon-mail.png" alt="">
+                        <h4>email@shelter.com</h4>
+                    </a>
                 </div>
                 <div class="cardTable">
-                    <img src="css/Images/icon-phone.png" alt="">
-                    <h4>+13 674 567 75 54</h4>
+                    <a href="https://i.gifer.com/origin/2c/2c5abbb97f60334a7423b9299d7dd49a_w200.gif" target="_blank">
+                        <img src="css/Images/icon-phone.png" alt="">
+                        <h4>+13 674 567 75 54</h4>
+                    </a>
                 </div>
             </div>
             <div id="locations">
                 <h3>We are waiting for your visit</h3>
                 <div class="cardTable">
-                    <img src="css/Images/icon-pin.png" alt="">
-                    <h4>1 Central Street, Boston (entrance from the store)</h4>
+                    <a href="https://www.google.com/maps/search/1+Central+Street,+Boston/@42.3605597,-71.0634296,16z?entry=ttu" target="_blank">
+                        <img src="css/Images/icon-pin.png" alt="">
+                        <h4>1 Central Street, Boston (entrance from the store)</h4>
+                    </a>
                 </div>
                 <div class="cardTable">
-                    <img src="css/Images/icon-pin.png" alt="">
-                    <h4>18 South Park, London </h4>
+                    <a href="https://www.google.com/maps/search/18+South+Park,+London/@51.528607,-0.4312391,10z/data=!3m1!4b1?entry=ttu" target="_blank">
+                        <img src="css/Images/icon-pin.png" alt="">
+                        <h4>18 South Park, London</h4>
+                    </a>
                 </div>
             </div>
             <img src="css/Images/footer-puppy.png" alt="footer-puppy" id="footerPuppy">

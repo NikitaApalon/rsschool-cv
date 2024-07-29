@@ -28,13 +28,15 @@ main {
         linear-gradient(0deg, rgba(33, 31, 32, 1), rgba(33, 31, 32, 1));
 }
 
-#header {
+header {
     width: 1200px;
     height: 60px;
     top: 30px;
-    left: 40px;
-    display: inline;
+    left: 50%;
+    margin-left: -600px;
     position: absolute;
+    z-index: 100;
+    
 
     & #logo {
         width: 194px;
@@ -42,18 +44,20 @@ main {
         display: inline;
         position: absolute;
 
-        & h3 {
+        & #logotype {
             color: rgba(241, 205, 179, 1);
+            font-family: Georgia;
             font-size: 32px;
             font-weight: 400;
             line-height: 35.2px;
             letter-spacing: 0.06em;
             text-align: left;
-            width: 100%;
+            width: 184px;
             height: 35px;
         }
 
         & h5 {
+            position: absolute;
             color: white;
             font-family: Arial;
             font-size: 13px;
@@ -61,7 +65,7 @@ main {
             line-height: 14.95px;
             letter-spacing: 0.1em;
             text-align: left;
-            width: 100%;
+            width: 184px;
             height: 15px;
             top: 45px;
             left: 4px;
@@ -90,8 +94,13 @@ main {
 
         & .link {
             margin-left: 20px;
+            transition: 0.5s;
         }
-
+        & .link:hover {
+            border-bottom: 3px solid #F1CDB3;
+            padding-bottom: 6px;
+            transition: 0.5s;
+        }
     }
 }
 
@@ -142,6 +151,8 @@ main {
             padding: 15px 45px 15px 45px;
             border-radius: 100px;   
             background-color: #F1CDB3;
+            border: 3px solid #F1CDB3;
+            transition: 0.5s;
 
             & #generalButton {
                 position: relative;
@@ -156,6 +167,10 @@ main {
                 color: #292929;
                 top: 0;
             }
+        }
+        & a:hover {
+            background-color: #FAFAFA;
+            transition: 0.5s;
         }
     }
 
@@ -312,24 +327,24 @@ main {
         }
 
         & #list {
+            display: grid;
+            grid: auto auto / auto auto auto auto auto;
+            grid-gap: 55px 114px;
+            padding: 0;
             position: absolute;
             width: 1026px;
             height: 281px;
             top: 150px;
             left: 87px;
-            padding: 0;
 
-            & .icon {
-                display: inline-block;
-                margin-left: 114px;
+            #secondLine {
+                margin-left: 90px;
+                margin-right: -90px;
             }
 
-            & #firstIcon + .icon {
-                margin-left: 0;
-            }
-
-            & #secondIconLine ~ .icon {
-                top: 55px;
+            #secondLine ~ .icon {
+                margin-left: 90px;
+                margin-right: -90px;
             }
         }
     }
@@ -347,6 +362,7 @@ main {
         width: Hug (60px)px;
         height: Hug (60px)px;
         margin: auto;
+        transition: 0.5s;
     }
 
     & h4 {
@@ -420,7 +436,9 @@ main {
                 margin-top: 40px;
                 padding: 10px 15px 10px 15px;
                 border-radius: 9px;
+                border: 3px solid #F1CDB3;
                 background-color: #F1CDB3;
+                transition: 0.5s;
 
                 & img {
                     position: absolute;
@@ -434,6 +452,7 @@ main {
                 & h4 {
                     position: absolute;
                     display: inline-block;
+                    color: #545454;
                     width: 280px;
                     height: 23px;
                     top: 10px;
@@ -444,6 +463,10 @@ main {
                     letter-spacing: 0.06em;
                     text-align: left;
                 }
+            }
+            & #creditCard:hover {
+                background-color: #FAFAFA;
+                transition: 0.5s;
             }
 
             & p {
@@ -556,7 +579,7 @@ footer {
 
     & h4 {
         position: relative;
-        width: Hug (260px)px;
+        width: 260px;
         height: Hug (46px)px;
         font-family: Georgia;
         font-weight: 400;
@@ -565,6 +588,9 @@ footer {
         text-align: left;
         left: 60px;
         color: #F1CDB3;
+    }
+    & h4:hover {
+        border-bottom: 1px solid #F1CDB3;
     }
 }
 
@@ -575,6 +601,11 @@ footer {
     padding: 19px;
     border-radius: 100px;
     border: 2px solid #F1CDB3;
+    transition: 0.5s;
+}
+.buttonArrow:hover {
+    background-color: #F1CDB3;
+    transition: 0.5s;
 }
 
 .rightArrow {
@@ -626,6 +657,12 @@ footer {
         position: absolute;
         top: 353px;
         left: 41.5px;
+        background-color: #FAFAFA;
+        transition: 0.5s;
+    }
+    & .buttonPrimary:hover{
+        background-color: #F1CDB3;
+        transition: 0.5s;
     }
 }
 
@@ -644,6 +681,11 @@ footer {
     color: #292929;
     top: 0;
     background-color: #F1CDB3;
+    transition: 0.5s;
+}
+.buttonPrimary:hover {
+    background-color: #FAFAFA;
+    transition: 0.5s;
 }
 
 img {
@@ -671,4 +713,8 @@ h5 {
 a {
     text-decoration: none;
     color: rgba(205, 205, 205, 1);
+}
+
+html {
+    scroll-behavior: smooth;
 }

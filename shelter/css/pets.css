@@ -132,15 +132,13 @@ main {
             width: 1200px;
             height: 930px;
             top: 135px;
-            
-            /*& .card {
-                margin-top: 15px;
-                margin-bottom: 15px;
-            }
 
-            & .card:not(#firstCard + .card, #fiveCard + .card) {
-                margin-left: 35px;
-            }*/
+            & .buttonPrimary {
+                background-color: #FAFAFA;
+            }
+            & .buttonPrimary:hover {
+                background-color: #F1CDB3;
+            }
         }
     }
 }

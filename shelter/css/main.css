@@ -631,6 +631,7 @@ footer {
     border-radius: 9px;
     background-color: #FAFAFA;
     overflow: hidden;
+    transition: 0.5s;
 
     & img {
         position: absolute;
@@ -664,6 +665,10 @@ footer {
         background-color: #F1CDB3;
         transition: 0.5s;
     }
+}
+.card:hover {
+    box-shadow: 0px 0px 15px 10px grey;
+    transition: 0.5s;
 }
 
 .buttonPrimary {

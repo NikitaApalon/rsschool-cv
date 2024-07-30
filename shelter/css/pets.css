@@ -126,18 +126,21 @@ main {
 
         & #cardsContainer {
             position: absolute;
+            display: grid;
+            grid: auto auto / auto auto auto auto;
+            grid-gap: 30px 35px;
             width: 1200px;
             height: 930px;
             top: 135px;
             
-            & .card {
+            /*& .card {
                 margin-top: 15px;
                 margin-bottom: 15px;
             }
 
             & .card:not(#firstCard + .card, #fiveCard + .card) {
                 margin-left: 35px;
-            }
+            }*/
         }
     }
 }
@@ -322,6 +325,7 @@ a {
     border-radius: 9px;
     background-color: #FAFAFA;
     overflow: hidden;
+    transition: 0.5s;
 
     & img {
         position: absolute;
@@ -343,6 +347,10 @@ a {
         top: 353px;
         left: 41.5px;
     }
+}
+.card:hover {
+    box-shadow: 0px 0px 15px 10px grey;
+    transition: 0.5s;
 }
 
 .buttonPrimary {

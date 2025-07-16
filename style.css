@@ -141,13 +141,18 @@ a:hover {
     padding-left: 30px;
 }
 
+#courses2 {
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
 #bottom a {
     color: black;
     text-decoration: none;
 }
 
 .nav {
-    margin-left: 75%;
+    margin-left: 45%;
     padding-top: 15px;
 }
 

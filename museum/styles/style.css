@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Forum";
+    src: url("./fonts/Forum.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --first-family: "Roboto", sans-serif;
+    --second-family: "Forum", sans-serif;
+    --bg-dark: #030303;
+    --dark-red: #710707;
+    --font-gold: #9d8665;
+    --font-gold-active: #7e6c51;
+}
+
+/* Подключение констант
+var(--first-family)
+var(--second-family)
+var(--bg-dark)
+var(--dark-red)
+var(--font-gold)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header_general {
+    max-height: 150px;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header_content {
+    max-width: 1440px;
+    height: 150px;
+    background-color: var(--bg-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header_logo {
+    width: 199px;
+    height: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header_logo_word {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#header_nav {
+    width: 775px;
+    height: 26px;
+
+    & ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nav_button {
+    font-family: var(--first-family);
+    font-weight: 200;
+    font-size: 22px;
+    letter-spacing: 0.09em;
+    color: #fff;
+}
+
+a {
+    cursor: default;
+    text-decoration: none;
+    color: #fff;
+}

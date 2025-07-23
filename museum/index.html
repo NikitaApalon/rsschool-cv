@@ -213,12 +213,53 @@
                 <h2 id="tickets_content_word">BUY TICKETS</h2>
                 <hr id="tickets_content_line">
                 <div id="tickets_content_heading">
-                    <img src="" alt="TicketsImg" id="tickets_content_img">
-                    <div id="tickets_content_type"></div>
-                    <div id="tickets_content_amount"></div>
+                    <img src="images/Tickets/TicketsImg.png" alt="TicketsImg" id="tickets_content_img">
+                    <div id="tickets_content_type">
+                        <p class="tickets_content_word">Ticket Type</p>
+                        <div id="tickets_content_type_choce">
+                            <div class="radio_button_container">
+                                <input class="radio_button" type="radio" id="per_radio" name="ticket" checked>
+                                <label for="per_radio" class="radio_word">Permanent exhibition</label>
+                            </div>
+                            <div class="radio_button_container">
+                                <input class="radio_button" type="radio" id="tem_radio" name="ticket">
+                                <label for="tem_radio" class="radio_word">Temporary exhibition</label>
+                            </div>
+                            <div class="radio_button_container">
+                                <input class="radio_button" type="radio" id="com_radio" name="ticket">
+                                <label for="com_radio" class="radio_word">Combined Admission</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tickets_content_amount">
+                        <p class="tickets_content_word" id="tickets_content_amount_word">Amount</p>
+                        <div class="tickets_content_amount_number_container">
+                            <p class="tickets_content_amount_number_word">Basic 18+</p>
+                            <div class="tickets_content_amount_number">
+                                <button class="tickets_content_amount_number_button1">–</button>
+                                <input type="number" class="tickets_content_amount_number_choice" value="1">
+                                <button class="tickets_content_amount_number_button2">+</button>
+                            </div>
+                        </div>
+                        <div class="tickets_content_amount_number_container">
+                            <p class="tickets_content_amount_number_word">Senior 65+</p>
+                            <div class="tickets_content_amount_number">
+                                <button class="tickets_content_amount_number_button1">–</button>
+                                <input type="number" class="tickets_content_amount_number_choice" value="1">
+                                <button class="tickets_content_amount_number_button2">+</button>
+                            </div>
+                        </div>
+                        <div id="tickets_content_amount_total">
+                            <p class="tickets_content_amount_total_word">Total €</p>
+                            <p class="tickets_content_amount_total_word">220</p>
+                        </div>
+                        <button id="tickets_content_amount_button">Buy Now</button>
+                    </div>
                 </div>
             </section>
         </div>
+
+        <img src="images/MainImg.png" alt="MainImg" id="main_img">
     </main>
 
     <footer>

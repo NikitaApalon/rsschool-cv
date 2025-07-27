@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Museum</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -16,6 +16,10 @@
                 </svg>
                 <h1 id="header_logo_word">Louvre</h1>
             </a>
+            <input id="header_nav_burger_toggle" type="checkbox">
+            <label id="header_nav_burger_toggle_button" for="header_nav_burger_toggle">
+                <span></span>
+            </label>
             <nav id="header_nav">
                 <ul>
                     <li><a class="nav_button" href="#virtual">Visiting</a></li>
@@ -30,7 +34,6 @@
     </header>
 
     <!--<div id="header_general_block"></div>-->
-    <img id="main_img" src="images/parallax.jpg" alt="MainImg">
 
     <main>
         <div id="welcome">
@@ -40,7 +43,9 @@
                         Welcome <br> to the louvre
                     </h2>
                     <p id="welcome_content_heading_word2">From the castle to the museum</p>
-                    <form action="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736"><button id="welcome_content_heading_button">Discover the Louvre</button></form>
+                    <form action="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">
+                        <button id="welcome_content_heading_button">Discover the Louvre</button>
+                    </form>
                 </div>
                 <div id="welcome_content_images">
                     <div id="welcome_content_images_slider">
@@ -129,7 +134,7 @@
                     <hr id="explore_content_heading_line">
                     <p class="explore_content_heading_words">Las Meninas is a 1656 painting by Diego Velázquez, the leading <br> artist of the Spanish Golden Age.</p>
                     <p class="explore_content_heading_words">It was cleaned in 1984 to remove a <u>"yellow veil"</u> of dust that had <br> gathered since the previous restoration in the 19th century.</p>
-                    <p class="explore_content_heading_words">The cleaning provoked furious protests, not because the picture had <br> been damaged in any way, but because it looked different.</p>
+                    <p class="explore_content_heading_words" id="explore_content_heading_word3">The cleaning provoked furious protests, not because the picture had <br> been damaged in any way, but because it looked different.</p>
                 </div>
                 <div id="explore_content_heading_images">
                     <img src="images/ExploreImg1.png" alt="ExploreImg1" id="explore_content_img1">
@@ -270,7 +275,9 @@
             </section>
         </div>
 
-        <div id="main_img_container"></div>
+        <div id="main_img_container">
+            <img id="main_img" src="images/parallax.jpg" alt="MainImg">
+        </div>
         
         <div id="contacts">
             <section id="contacts_content">
